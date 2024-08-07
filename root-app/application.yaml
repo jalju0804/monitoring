@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     path: apps/loki
-     repoURL: https://grafana.github.io/helm-charts
+    repoURL: https://grafana.github.io/helm-charts
     targetRevision: 6.8.0 
     helm:
       valueFiles:
