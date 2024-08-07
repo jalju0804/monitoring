@@ -11,6 +11,8 @@ spec:
     targetRevision: 6.8.0
     helm:
       releaseName: "loki"
+      valueFiles:
+        - values.yaml
   destination:
     namespace: loki
     server: https://kubernetes.default.svc
