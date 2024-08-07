@@ -17,8 +17,12 @@ loki:
 
   storage:
     type: s3
+    bucketNames:
+      chunks: "chunks"
+      ruler: "ruler"
+      admin: "admin"
     s3:
-      s3: s3://NPZ29OCGUNGS8T948JSB:mfn9MubZLxAWHCuzEgSXZ6KKCtVaiQOBdgEUx9iP@ceph-object.aoldacloud.com/witt
+      s3: s3://NPZ29OCGUNGS8T948JSB:mfn9MubZLxAWHCuzEgSXZ6KKCtVaiQOBdgEUx9iP@ceph-object.aoldacloud.com/aolda
       endpoint: https://ceph-object.aoldacloud.com
       region: us-east-1
       secretAccessKey: mfn9MubZLxAWHCuzEgSXZ6KKCtVaiQOBdgEUx9iP
