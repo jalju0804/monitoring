@@ -6,12 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://grafana.github.io/helm-charts
-    chart: loki
+    repoURL: "https://grafana.github.io/helm-charts"
+    chart: "loki"
     targetRevision: 6.8.0
     helm:
-      valueFiles:
-        - loki-values.yaml
+      releaseName: "loki"
   destination:
     namespace: loki
     server: https://kubernetes.default.svc
